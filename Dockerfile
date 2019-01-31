@@ -1,12 +1,12 @@
 # Dockerfile
 # 使用node做为镜像
-FROM node
+FROM node:8.12
 
 # 在容器中创建该目录
-RUN mkdir -p /home/project
+RUN mkdir -p /usr/app
 
 # 设置容器的工作目录为该目录
-WORKDIR /Users/linsi/workspace/github/koa-example
+WORKDIR /usr/app
 
 # 向外提供3000端口
 EXPOSE 3000
